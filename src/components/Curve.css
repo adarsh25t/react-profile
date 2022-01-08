@@ -1,0 +1,37 @@
+
+.custom-shape-divider-bottom-1641621608 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1641621608 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 238px;
+}
+
+.custom-shape-divider-bottom-1641621608 .shape-fill {
+    fill: #c75000;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1641621608 svg {
+        width: calc(131% + 1.3px);
+        height: 149px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1641621608 svg {
+        width: calc(134% + 1.3px);
+        height: 101px;
+    }
+}
