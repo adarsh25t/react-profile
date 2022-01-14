@@ -1,0 +1,91 @@
+.nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.nav h1{
+    color: white;
+}
+.nav h1 span{
+    color: orangered;
+}
+
+.nav .nav-list{
+    display: flex;
+    
+    align-items: center;
+    list-style: none;
+}
+.nav .nav-list li{
+    margin-right: 20px;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav-list li:hover a{
+    color: orangered;
+    transition: 1s;
+}
+.fa-bars{
+    display: none;
+}
+
+@media screen and (max-width:810px){
+    .fa-bars{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .fa-times{
+        color: orangered;
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav-list{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        top: 10vh;
+        background-color: #020630;
+        left: -780px;
+        z-index: 100;
+        justify-content: start;
+        align-items: center;
+        padding-top: 100px;
+        border-top: 1px solid rgba(168, 166, 166, 0.349);
+        transition: 1s;
+    }
+    .nav .nav-list li{
+        margin-bottom: 50px;
+    }
+    .nav-list li a{
+        font-size: 2.3rem;
+    }
+    .activeNav{
+        left: 0px;
+        opacity: .9;
+        animation: navChange 2s ease;
+    }
+}
+
+@keyframes navChange{
+    30%{
+        opacity: .5;
+    }
+    60%{
+        opacity: .8;
+    }
+    100%{
+        opacity: .9;
+    }
+}
+
