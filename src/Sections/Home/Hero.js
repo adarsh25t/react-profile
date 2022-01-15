@@ -2,8 +2,8 @@ import "./Hero.css";
 import Typical from "react-typical";
 import profile from "../../assets/profile.jpg";
 import Button_1 from "../../components/Button-1";
-import Curve from "../../components/Curve";
-
+// import Curve from "../../components/Curve";
+import Slide from 'react-reveal/Slide';
 
 const Hero = () => {
   return (
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-right">
-          <div className="hero-image"  style={{backgroundImage: `url(${profile})`}} >
+              <div className="hero-image"  style={{backgroundImage: `url(${profile})`}} >
           </div>
       </div>
     </div>

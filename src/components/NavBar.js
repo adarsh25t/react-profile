@@ -19,7 +19,7 @@ const NavBar = ()=>{
                 <li><a href="">About</a></li>
                 <li><a href="">Skill</a></li>
                 <li><a href="">Project</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     )
