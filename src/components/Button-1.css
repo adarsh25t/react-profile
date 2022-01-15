@@ -1,5 +1,4 @@
 .btn-1{
-  background-color: white;
   color: black;
   padding: .4rem 1.5rem;
   border: none;
@@ -9,6 +8,9 @@
   font-size: 1rem;
   letter-spacing: 2px;
   cursor: pointer;
+  border: 1.5px solid orangered;
+  background: none;
+  color: white;
 }
 .btn-1:hover{
   background-color: rgb(224, 76, 22);

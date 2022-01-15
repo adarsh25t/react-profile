@@ -1,7 +1,8 @@
 import "./Hero.css";
 import Typical from "react-typical";
-import profile from "../assets/profile.jpg"
-import Button_1 from "./Button-1";
+import profile from "../../assets/profile.jpg";
+import Button_1 from "../../components/Button-1";
+import Curve from "../../components/Curve";
 
 
 const Hero = () => {
@@ -46,6 +47,7 @@ const Hero = () => {
           </div>
       </div>
     </div>
+    {/* <Curve/> */}
 </div>
   );
 };
