@@ -1,13 +1,16 @@
 .about-me-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 187px 0 0 0;
-    background-color: white;
+    margin: 80px 0 0 0;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .about-me-parent{
-    max-width: 1000px;
-    width: 70%;
+    width: 100%;
+    margin-bottom: 50px;
 }
 .about-me-card{
     display: flex;
@@ -25,7 +28,7 @@
 .about-me-description{
     font-family: 'Poppins', sans-serif;
     font-size: .9rem;
-    color: black;
+    color: white;
     letter-spacing: 1.4px;
     font-weight: 300;
 }
@@ -37,7 +40,7 @@
     font-weight: 600;
     font-size: 1rem;
     margin: 0 0 5px 0;
-    color: rgb(10, 10, 10);
+    color: white;
     font-weight: 500;
 }
 .Highlights{
@@ -47,6 +50,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: .9rem;
     font-weight: 300;
+    color: white;
 }
 .Highlights-blob{
     height: 12px;
@@ -57,7 +61,7 @@
 }
 .about-me-options button{
     background: black;
-    border: none;
+    border: 1px solid white;
 }
 .about-me-options .download-link{
     margin: 0 0 0 30px;
@@ -70,6 +74,7 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     cursor: pointer;
+    border: none;
 }
 .download-link a{
     text-decoration: none;
@@ -93,12 +98,19 @@
     }
 }
 @media only screen and (max-width:440px){
+    .about-me-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .about-me-options{
         display: flex;
         flex-direction: column;
         margin-top: -30px;
     }
     .about-me-options button{
+        width: 100%;
+    }
+    .about-me-details{
         width: 100%;
     }
     .about-me-options .download-link{

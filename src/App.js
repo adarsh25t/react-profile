@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import AboutMe from './Sections/About/AboutMe';
@@ -11,13 +12,17 @@ import Resume from './Sections/Resume/Resume';
 function App() {
   return (
     <div className="App">
-        <NavBar/>
-        <Home/>
-        <AboutMe/>
-        <Resume/>
-        <Projects/>
-        <Contactme/>
-        <Footer/>
+        <BrowserRouter>
+            <NavBar/>
+            <Switch>
+                <Route exact path={"/"} component={Home}/>
+                <Route path={"/aboutme"} component={AboutMe}/>
+                <Route path={"/project"} component={Projects}/>
+                <Route path={"/resume"} component={Resume}/>
+                <Route path={"/contact"} component={Contactme}/>
+            </Switch>
+            <Footer/>
+        </BrowserRouter>    
     </div>
   );
 }

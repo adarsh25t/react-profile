@@ -56,10 +56,9 @@ export default function Contactme(props) {
     };
 
     return (
-        <div className='main-container fade-in' id='contact'>
+        <div className='main-container'>
             <ScreenHeading subHeading={"Lets keep in Touch"} title={"Contact Me"}/>
             <div className='central-form'>
-                <div className='col'>
                 <h2 className='title'>
                     <Typical
                         loop={Infinity}
@@ -115,7 +114,6 @@ export default function Contactme(props) {
                     </form>
                 </div>
             </div>
-        </div>
     );
 }
 

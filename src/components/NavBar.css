@@ -1,14 +1,27 @@
 .nav{
-    height: 10vh;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #020630;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .nav h1{
     color: white;
+    line-height: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
 }
 .nav h1 span{
     color: orangered;
@@ -16,20 +29,34 @@
 
 .nav .nav-list{
     display: flex;
-    
     align-items: center;
     list-style: none;
+
 }
-.nav .nav-list li{
-    margin-right: 20px;
+.nav .nav-list li:not(:last-child){
+    margin-right: 70px;
+    line-height: 60px;
 }
-.nav-list li a{
+.nav-list li .navlink{
     color: white;
     text-decoration: none;
-    font-size: 17px;
-    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
-
+.navlink i{
+    font-size: 17px;
+    margin: 5px
+}
+.github{
+    background-color: #1d1e20;
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: white;
+}
+.github i{
+    margin-left: 7px;
+    font-size: 15px;
+}
 .nav-list li:hover a{
     color: orangered;
     transition: 1s;
@@ -39,10 +66,13 @@
 }
 
 @media screen and (max-width:810px){
+    .nav{
+        padding-top: 5px;
+    }
     .fa-bars{
         display: block;
         color: white;
-        font-size: 2rem;
+        font-size: 20px;
         cursor: pointer;
     }
     .fa-times{
@@ -56,22 +86,39 @@
         width: 100%;
         height: 100vh;
         flex-direction: column;
-        top: 10vh;
-        background-color: #020630;
+        top: 60px;
+        background-color: black;
         left: -780px;
         z-index: 100;
-        justify-content: start;
+        
         align-items: center;
-        padding-top: 100px;
+        padding-left: 20%;
         border-top: 1px solid rgba(168, 166, 166, 0.349);
         transition: 1s;
+        text-align: center;
     }
     .nav .nav-list li{
         margin-bottom: 50px;
+        text-align: center;
     }
-    .nav-list li a{
-        font-size: 2.3rem;
+    .nav-list li .navlink{
+        font-size: 20px;
+        text-align: center;
     }
+    .nav-list li .navlink i{
+        font-size: 20px;
+    }
+    .github{
+        padding: 15px 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15%;
+    }
+    .github i{
+        font-size: 23px;
+    }
+
     .activeNav{
         left: 0px;
         opacity: .9;
@@ -91,3 +138,16 @@
     }
 }
 
+@media screen and (max-width:550px){
+    .nav{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .nav-list li .navlink{
+        font-size: 17px;
+        text-align: center;
+    }
+    .nav-list li .navlink i{
+        font-size: 17px;
+    }
+}

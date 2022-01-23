@@ -1,4 +1,5 @@
 import Button_1 from "../../components/Button-1";
+import Pskills from "../../components/Pskills";
 import ScreenHeading from "../../components/ScreenHeading";
 import "./AboutMe.css";
 
@@ -60,6 +61,7 @@ const AboutMe = ()=>{
                 </div>
                 </div>
             </div>
+            <Pskills/>
         </div>
     )
 }

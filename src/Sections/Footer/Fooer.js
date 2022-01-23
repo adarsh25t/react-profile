@@ -2,12 +2,15 @@ import "./Footer.css";
 
 const Footer = ()=>{
     return(
-        <div className="footer" id="footer">
-            <h1>Contact Me ☎️</h1>
-            <p>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
-            <h4>+91 8086 0249 33</h4>
-            <h4>adarsh25t@gmail.com</h4>
-            <h5>Made by <a href="adarsh25t.in">ADARSH. T</a></h5>
+        <div className="footer">
+            <h4>Designed and Developed by ADARSH.T</h4>
+            <h4>Copyright © 2022 Ah</h4>
+            <h4 className="footer-icon">
+                <a href=""><i class="fab fa-github"></i></a> 
+                <a href=""><i class="fab fa-linkedin-in"></i></a> 
+                <a href=""><i class="fab fa-stack-overflow"></i></a> 
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </h4>
         </div>
     )
 }
